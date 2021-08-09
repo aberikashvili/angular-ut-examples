@@ -6,6 +6,7 @@ import { CounterService } from '../counter.service';
   template: `<div>
     <div>Component B</div>
     <button (click)="handleClick()">Click Me!</button>
+    <div>Count: {{count}}</div>
   </div>`,
   providers: [CounterService],
 })
@@ -24,6 +25,5 @@ export class ComponentBComponent implements OnInit {
 
   private increase(): void {
     this.count = this.counterService.add();
-    console.log('Count', this.count);
   }
 }

@@ -7,7 +7,7 @@ import { UserService } from '../user.service';
     <div>Component A</div>
     <button (click)="handleClick()">Click Me!</button>
     <button (click)="loadUserDetails(1)">Click Me!</button>
-    <button (click)="updateStr()">Click Me!</button>
+    <!--<button (click)="updateStr()">Click Me!</button>-->
   </div>`,
 })
 export class ComponentAComponent implements OnInit {
