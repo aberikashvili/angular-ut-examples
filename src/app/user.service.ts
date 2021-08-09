@@ -16,7 +16,7 @@ export class UserService {
       );
   }
 
-  loadById(): Observable<any> {
+  loadById(id: number): Observable<any> {
     return this.http.get(``)
       .pipe();
   }
